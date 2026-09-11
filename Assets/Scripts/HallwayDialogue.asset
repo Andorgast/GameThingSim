@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: effd63a2d87d06a4384dbb7a56db579f, type: 3}
+  m_Name: HallwayDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: "well, since I can\u2019t doomscroll on social media, what should
+      I do?"
+    responses:
+    - responseText: Check my phone
+      nextNode:
+        dialogueText: "You grab your phone from your pocket and check your notifications.
+          You click on the most recent one, but the app fails to load. Oh, right.
+          There\u2019s no wifi. "
+        responses:
+        - responseText: Try to call your mother
+          nextNode:
+            dialogueText: Did you not learn anything?
+            responses:
+            - responseText: Put the phone down
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: Put the phone down
+          nextNode:
+            dialogueText: Bruh
+            responses: []
+    - responseText: 'Go to the kitchen '
+      nextNode:
+        dialogueText: "You make your way to the kitchen. You\u2019re thinking about
+          all of the food that is going to spoil. Your stomach growls, so you raid
+          the fridge. "
+        responses: []
+    - responseText: Go outside
+      nextNode:
+        dialogueText: 'You walk outside and decide on the spot what you want to do '
+        responses: []
