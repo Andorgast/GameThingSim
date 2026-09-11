@@ -13,17 +13,34 @@ MonoBehaviour:
   m_Name: HallwayDialogue
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   RootNode:
-    dialogueText: Someone's knocking on your door
+    dialogueText: "well, since I can\u2019t doomscroll on social media, what should
+      I do?"
     responses:
-    - responseText: Open the Door
+    - responseText: Check my phone
       nextNode:
-        dialogueText: 
+        dialogueText: "You grab your phone from your pocket and check your notifications.
+          You click on the most recent one, but the app fails to load. Oh, right.
+          There\u2019s no wifi. "
+        responses:
+        - responseText: Try to call your mother
+          nextNode:
+            dialogueText: Did you not learn anything?
+            responses:
+            - responseText: Put the phone down
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: Put the phone down
+          nextNode:
+            dialogueText: Bruh
+            responses: []
+    - responseText: 'Go to the kitchen '
+      nextNode:
+        dialogueText: "You make your way to the kitchen. You\u2019re thinking about
+          all of the food that is going to spoil. Your stomach growls, so you raid
+          the fridge. "
         responses: []
-    - responseText: Checks who's there
+    - responseText: Go outside
       nextNode:
-        dialogueText: 
-        responses: []
-    - responseText: Ignore it
-      nextNode:
-        dialogueText: 
+        dialogueText: 'You walk outside and decide on the spot what you want to do '
         responses: []
