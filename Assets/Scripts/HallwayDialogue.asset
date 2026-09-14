@@ -39,8 +39,71 @@ MonoBehaviour:
         dialogueText: "You make your way to the kitchen. You\u2019re thinking about
           all of the food that is going to spoil. Your stomach growls, so you raid
           the fridge. "
-        responses: []
+        responses:
+        - responseText: Eat everything that will spoil
+          nextNode:
+            dialogueText: 'You ate everything that will spoil. Your cottage cheese,
+              your fish left-overs from yesterday, all of the pre-sliced deli meat
+              and your great aunts birthday cake slice. You feel nauseous after inhaling
+              everything in sight. '
+            responses:
+            - responseText: Yeah... No more eating for a while
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: Make breakfast
+          nextNode:
+            dialogueText: You grab milk from the fridge and make some cornflakes.
+              You sit at the table and start munching on it.
+            responses:
+            - responseText: Continue
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: Leave for now
+          nextNode:
+            dialogueText: Leave for now
+            responses: []
     - responseText: Go outside
       nextNode:
         dialogueText: 'You walk outside and decide on the spot what you want to do '
-        responses: []
+        responses:
+        - responseText: Knock on your neighbours door
+          nextNode:
+            dialogueText: You decide to check in on your neighbour. Maybe their power
+              is out too? You walk over to their front door.
+            responses:
+            - responseText: Knock
+              nextNode:
+                dialogueText: Knock Knock Knock. The door slowly creaks open. And
+                  you see a familiar face, it's Gertrude.
+                responses:
+                - responseText: Continue
+                  nextNode:
+                    dialogueText: Continue
+                    responses: []
+            - responseText: Leave
+              nextNode:
+                dialogueText: 'You decided to not bother them for now. '
+                responses:
+                - responseText: Continue
+                  nextNode:
+                    dialogueText: 
+                    responses: []
+        - responseText: 'Go to your car '
+          nextNode:
+            dialogueText: "\u201CGuess I\u2019ll go grocery shopping\u201D Screen
+              fades to black"
+            responses:
+            - responseText: Continue
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: Go back inside
+          nextNode:
+            dialogueText: You decide you've had enough fresh air for now.
+            responses:
+            - responseText: Continue
+              nextNode:
+                dialogueText: 
+                responses: []
